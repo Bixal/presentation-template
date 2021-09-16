@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ site.title }}</title>
+  <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,6 +17,9 @@
 
 <body>
   <main id="main-content">
+    {% if page.title == "Notes" %}
+      {% include presenter-notes.html %}
+    {% else %}
       {% for slide in site.slides %}
       {% assign next_i = forloop.index0 | plus: 1 %}
         {% if slide.template == "text" %}
@@ -33,7 +36,8 @@
           {% include template-image-with-link.html %}
         {% endif %}
       {% endfor %}
-  </main>
+    {% endif %}
+  </main> 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/js/uswds.min.js" integrity="sha512-0I5hS86ISi9DRRJgArVIUFaI0fUpdxGppKIc6Dkl3NkdSNLwR2523QvMADILsfE1yK+nKbWuGDx+99+Fop3IgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
