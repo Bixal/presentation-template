@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="{{ site.baseurl}}/assets/css/custom.css" />
 </head>
 
-<body onload="gatherNotes(document.getElementById('presenterNotes').textContent);">
+<body>
   <main id="main-content">
     {% if page.title == "Notes" %}
       {% include presenter-notes.html %}
@@ -36,12 +36,10 @@
           {% include template-image-with-link.html %}
         {% endif %}
       {% endfor %}
-      {% include presenter-notes.html %}
-      {% endif %}
+    {% endif %}
   </main> 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/2.12.1/js/uswds.min.js" integrity="sha512-0I5hS86ISi9DRRJgArVIUFaI0fUpdxGppKIc6Dkl3NkdSNLwR2523QvMADILsfE1yK+nKbWuGDx+99+Fop3IgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </body>
 
 </html>
