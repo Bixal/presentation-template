@@ -88,5 +88,5 @@ If you're uploading an image, go to [/assets/img](/assets/img) in your repositor
 How you name your slides will determine the order they will appear.
 
 - Your files will automatically be sorted alphabetically.
-- You can control the order by adding numeric values to the front of your slide's name (i.e. 1, 1.1, 1.2, 2, 2.4, 3, etc.). 
+- You can control the order by adding numeric values to the front of your slide's file name (i.e. 1, 1.1, 1.2, 2, 2.4, 3, etc.). 
 - The lowest value will appear first and the highest value will appear last.
