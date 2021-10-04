@@ -28,7 +28,7 @@ Why would you want to do this? Here are a few reasons:
     - USWDS-style [utility classes](https://cdn.jsdelivr.net/gh/bixal/brand-css@v2.1/utilities-for-uswds.css) to apply brand colors to different elements
 - Example slides
 - Automatic slide count and next slide links
-- Presenter notes available on the `/notes/` page of your site.
+- Presenter notes available on the [`/notes/`](https://bixal.github.io/presentation-template/notes/) page of your site.
 
 ## How to
 
